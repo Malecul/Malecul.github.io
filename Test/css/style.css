@@ -81,19 +81,22 @@ a, a:hover{
 
 #navigation_knopki
 {
+    
     height:70px;              
 }
 
 #navigation_knopki ul li
 {
+    
     float:left;
     list-style-type: none;
 }
 
 #navigation_knopki ul li a
 {
+    
     color: #000000;
-    padding: 0 68px; 
+    padding: 0 67px; 
     text-decoration: none;
     line-height: 70px;
     display: block;
