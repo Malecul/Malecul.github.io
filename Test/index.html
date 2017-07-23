@@ -17,7 +17,7 @@
                             <div align="center">
                                 <table border="0">
                                     <tr align="center">
-                                        <td colspan="3"><img src="images/img1.jpg" name="slide_show"></td>
+                                        <td colspan="3"><img src="images/img1.jpg" name="slide_show" width="890" height="270"></td>
                                     </tr>
                                     <tr>
                                         <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
@@ -35,7 +35,7 @@ all_images = new Array (
 "images/img2.jpg");
 var ImgNum = 0;
 var ImgLength = all_images.length - 1;
-var delay = 10000;
+var delay = 1000;
 var lock = false;
 var run;
 
@@ -75,11 +75,14 @@ function auto() {
                 
                 
                        <div id="menu">
-                       <form>
-                       <input type="search" name="q" placeholder="Поиск по магазину"><br><br>
-                       <input type="submit" value="Найти">
-                       </form>
                            
+                           <div class="form">
+                                <form>
+                                    <input type="search" name="q" placeholder="Поиск по сайту" size="15" ><br><br>
+                                    <input type="submit" value="Найти">
+                                </form>
+                           </div>
+                       
                        		<div id="uroven_1">Уровень_1
                        		</div>
                             				<div id="sort">
@@ -111,13 +114,22 @@ function auto() {
                 
                        	<div id="content">
                             <div class="content_post">
-                                Пост
+                                            <article>
+                                                <header id="article-head">
+                                                    <h1>Заголовок статьи</h1>
+                                                    <img src="images/logo.png" alt="">
+                                                </header>
+                                                    <p>Текст статьи, текст, текст</p>
+                                                <footer>
+                                                    <p>Опубликовано:<time datetime="2013-02-12" pubdate>Понедельник, 22 мая 2017</time></p>
+                                                </footer>
+                                            </article>
                             </div>
                         </div>
                 
                 <div id="footer">Подвал сайта
                 </div> 
-                
+                                
                 <div id="clear">
                 </div>
 </body>
