@@ -36,7 +36,7 @@ a, a:hover{
  
 #container {
             margin: 0 auto;
-            width: 900px;
+            width: 1000px;
             min-height: 100%;
 }
  
@@ -44,7 +44,7 @@ a, a:hover{
 	        margin:10px 10px 10px 0px;
 			background:#DCDCDC;
             height: 150px;
-            width: 690px;
+            width: 790px;
 			float:left;
 			
 }
@@ -60,7 +60,7 @@ a, a:hover{
 #photo {
 	        margin:0px 0px 10px 0px;
 			background: #DCDCDC;
-			width: 900px;
+			width: 1000px;
 			height: 300px;
 			clear:left;
 }
@@ -68,7 +68,7 @@ a, a:hover{
 #navigation {
 	        margin:0px 0px 10px 0px;
 			background: #DCDCDC;
-			width: 900px;
+			width: 1000px;
 			height: 70px;
 }
 
@@ -86,7 +86,7 @@ a, a:hover{
 #navigation_knopki ul li a
 {
     color: #000000;
-    padding: 0 67px; 
+    padding: 0 77px; 
     text-decoration: none;
     line-height: 70px;
     display: block;
@@ -104,7 +104,7 @@ a, a:hover{
 	        margin:0px 0px 10px 0px;
             background: #DCDCDC;
 			float:left;
-            width: 180px;
+            width: 250px;
             height: 1100px;
 }
 
@@ -154,12 +154,12 @@ a, a:hover{
 	        margin:0px 0px 10px 10px;
 			background: #DCDCDC;
 			float: left;
-			width: 710px;
+			width: 740px;
 			height: 1100px;
 }
 
 .content_post{
-    width:690px;
+    width:720px;
     ьшт-height: 200px;
     border: solid 1px black;
     margin: 5px;
@@ -173,7 +173,7 @@ a, a:hover{
 #footer {
             background: #DCDCDC;
             height: 100px;
-            width: 900px;
+            width: 1000px;
             float:left;
 }
 
