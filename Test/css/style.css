@@ -164,20 +164,12 @@ a, a:hover{
 			height: 1100px;
 }
 
-#stranici {
-	        margin:0px 0px 10px 10px;
-			background: #DCDCDC;
-			float: center;
-			width: 150px;
-			height: 100px;
-}
-
-#content_tovar {
-	        margin:10px 0px 0px 10px;
-			background: #B3B3B3;
-			float: left;
-			width: 220px;
-			height: 300px;
+.content_post{
+    width:690px;
+    height: 200px;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 1px;
 }
  
 #clear {
@@ -188,6 +180,7 @@ a, a:hover{
             background: #DCDCDC;
             height: 100px;
             width: 900px;
+            float:left;
 }
 
 
