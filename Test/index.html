@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>Магазин</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+            <div id="container">
+                       <div id="header_logo">Логотип, название, слоган
+                       </div>
+                       <div id="header_adres">Адреса
+                       </div>
+                       <div id="header_korzina">Корзина
+                       </div>
+                       <div id="photo">
+                       		
+                            
+                            
+<div align="center">
+ <table border="0">
+  <tr align="center">
+   <td colspan="3"><img src="images/img1.jpg" name="slide_show"></td>
+  </tr>
+  <tr>
+   <td align="right"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
+   <td align="center"><a href="javascript:auto()">Старт/Стоп</a></td>
+   <td align="left"><a href="javascript:chgImg(1)">Следующая</a></td>
+  </tr>
+ </table>
+</div>
+
+
+
+<script type="text/javascript">
+all_images = new Array (
+"images/img1.jpg",
+"images/img2.jpg");
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 10000;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+
+
+
+<script type="text/javascript">
+ auto();
+</script>
+
+
+
+
+<script type="text/javascript">
+<!--
+function f_go(page) {
+switch (page) {
+case 1:
+document.getElementById("page1").style.display = "block";
+document.getElementById("page2").style.display = "none";
+document.getElementById("page3").style.display = "none";
+document.getElementById("page4").style.display = "none";
+break;
+case 2:
+document.getElementById("page1").style.display = "none";
+document.getElementById("page2").style.display = "block";
+document.getElementById("page3").style.display = "none";
+document.getElementById("page4").style.display = "none";
+break;
+case 3:
+document.getElementById("page1").style.display = "none";
+document.getElementById("page2").style.display = "none";
+document.getElementById("page3").style.display = "block";
+document.getElementById("page4").style.display = "none";
+break;
+case 4:
+document.getElementById("page1").style.display = "none";
+document.getElementById("page2").style.display = "none";
+document.getElementById("page3").style.display = "none";
+document.getElementById("page4").style.display = "block";
+}
+}
+//-->
+</script>
+                       </div>
+                       <div id="navigation">
+                     		 	<div id="navigation_knopki">
+                                <ul>
+                                    <li><a href="#">Пункт_1</a></li>
+                                    <li><a href="#">Пункт_2</a></li>
+                                    <li><a href="#">Пункт_3</a></li>
+                                    <li><a href="#">Пункт_4</a></li>
+                                    <li><a href="#">Пункт_5</a></li>
+                                </ul>
+                       			</div>	
+                       </div>
+                       <div id="menu">
+                       <form>
+                       <p><input type="search" name="q" placeholder="Поиск по магазину">
+                       <input type="submit" value="Найти"></p>
+                       </form>
+                       		<div id="uroven_1">Уровень_1
+                       		</div>
+                            				<div id="sort">
+                                            <ul>
+												<li><a href="#">Товар_1</a></li>
+												<li><a href="#">Товар_2</a></li>
+												<li><a href="#">Товар_3</a></li>
+												<li><a href="#">Товар_4</a></li>
+											</ul>
+                                            </div>
+                            <div id="uroven_1">Уровень_2
+                       		</div>
+                            				<div id="sort">
+                                            <ul>
+												<li><a href="#">Товар_1</a></li>
+												<li><a href="#">Товар_2</a></li>
+												<li><a href="#">Товар_3</a></li>
+											</ul>
+                                            </div>
+                            <div id="uroven_1">Уровень_3
+                       		</div>
+                            				<div id="sort">
+                                            <ul>
+												<li><a href="#">Товар_1</a></li>
+												<li><a href="#">Товар_2</a></li>
+											</ul>
+                                            </div>
+              			</div>
+                       	<div id="content">
+<div>
+<div id="page1">
+								<div id="content_tovar">Товар_1
+                       			</div>
+                       			<div id="content_tovar">Товар_2
+                       			</div>
+                       			<div id="content_tovar">Товар_3
+                       			</div>
+                                <div id="content_tovar">Товар_4
+                       			</div>
+                       			<div id="content_tovar">Товар_5
+                       			</div>
+                       			<div id="content_tovar">Товар_6
+                       			</div>
+                                <div id="content_tovar">Товар_7
+                       			</div>
+                       			<div id="content_tovar">Товар_8
+                       			</div>
+                       			<div id="content_tovar">Товар_9
+                       			</div>
+</div></div>
+<div>
+<div id="page2" style="display: none">
+								<div id="content_tovar">Товар_10
+                       			</div>
+                       			<div id="content_tovar">Товар_11
+                       			</div>
+                       			<div id="content_tovar">Товар_12
+                       			</div>
+                                <div id="content_tovar">Товар_13
+                       			</div>
+                       			<div id="content_tovar">Товар_14
+                       			</div>
+                       			<div id="content_tovar">Товар_15
+                       			</div>
+                                <div id="content_tovar">Товар_16
+                       			</div>
+                       			<div id="content_tovar">Товар_17
+                       			</div>
+                       			<div id="content_tovar">Товар_18
+                       			</div>
+</div></div>
+<div>
+<div id="page3" style="display: none">
+								<div id="content_tovar">Товар_19
+                       			</div>
+                       			<div id="content_tovar">Товар_20
+                       			</div>
+                       			<div id="content_tovar">Товар_21
+                       			</div>
+                                <div id="content_tovar">Товар_22
+                       			</div>
+                       			<div id="content_tovar">Товар_23
+                       			</div>
+                       			<div id="content_tovar">Товар_24
+                       			</div>
+                                <div id="content_tovar">Товар_25
+                       			</div>
+                       			<div id="content_tovar">Товар_26
+                       			</div>
+                       			<div id="content_tovar">Товар_27
+                       			</div>
+</div></div>
+<div>
+<div id="page4" style="display: none">
+								<div id="content_tovar">Товар_28
+                       			</div>
+                       			<div id="content_tovar">Товар_29
+                       			</div>
+                       			<div id="content_tovar">Товар_30
+                       			</div>
+                                <div id="content_tovar">Товар_31
+                       			</div>
+                       			<div id="content_tovar">Товар_32
+                       			</div>
+                       			<div id="content_tovar">Товар_33
+                       			</div>
+                                <div id="content_tovar">Товар_34
+                       			</div>
+                       			<div id="content_tovar">Товар_35
+                       			</div>
+                       			<div id="content_tovar">Товар_36
+                       			</div>
+</div></div>    
+
+<div id="stranici">
+<a href="#" onclick="f_go(1); return false;">1</a>
+<a href="#" onclick="f_go(2); return false;"> 2</a> 
+<a href="#" onclick="f_go(3); return false;"> 3</a>   
+<a href="#" onclick="f_go(4); return false;"> 4</a>     
+</div>             
+                       </div>
+                       <div id="clear">
+                       </div>
+                       <div id="footer">Подвал сайта
+                       </div>
+            </div>
+</body>
+</html>
